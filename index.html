@@ -1,0 +1,102 @@
+<html lang="pt-br">
+
+<head>
+    <title>Loja Produtos Limpeza</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <a href="Carrinho.html">
+    <img src="carrinho.jpg" width="70px" height="40px" alt="carrinho de compras" title="carrinho de compras" />
+    </a>
+    <a href="login.html"><h3>Login</h3></a>
+    <style>
+        * {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #Produtos {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2%;
+            display: flex;
+        }
+
+        .produto-unico {
+
+            width: 32%;
+            margin: 1%;
+            border: 1px solid #ccc;
+            margin-top: 20px 0;
+            margin-bottom: 20px 0;
+
+        }
+
+        .produto-unico img {
+
+           max-width: 100%;
+
+        }
+
+        .produto-unico p {
+
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        .produto-unico a {
+            text-decoration: none;
+            color: white;
+            background-color: #5fb382;
+            text-align: center;
+            display: block;
+            padding: 5px 0;
+            font-size: 18px;
+
+        }
+
+        h2 {
+            background-color: #5f7c8a;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+        }
+
+
+        h3{
+            color: white;
+            background-color: #5f7c8a;
+            border-top: 10px;
+            padding: 5px;
+        }
+        @media screen and (max-width: 768xp){
+            .produto-unico{
+
+                width: 100%;
+                margin-right: 0;
+            }
+
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <a href="criarConta.html"><h3>Criar conta</h3></a>
+    <h2>Produtos</h2>
+    <div id="produtos" :></div>
+    <!--itens de compra-->
+
+   <!-- <h2>Carrinho</h2>
+    <div id="carrinho" :>
+    </div>
+    atualiza carrinho-->
+
+    <script src="products.js"></script>
+
+</body>
+
+</html>

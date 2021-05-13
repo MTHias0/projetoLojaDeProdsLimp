@@ -1,0 +1,99 @@
+<html lang="pt-br">
+
+<head>
+    <script src="products.js"></script>
+    <title>Carrinho de compra</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <a href="index.html"><input type="button" name="volta" value="Página anterior"/></a>
+
+    <style>
+        body{
+            background-color: #5f7c8a;
+        }
+        
+        * {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        #Carrinho {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 2%;
+
+        }
+
+        .produto-unico {
+
+            width: 32%;
+            margin: 1%;
+            border: 1px solid #ccc;
+            margin-top: 20px 0;
+            margin-bottom: 20px 0;
+
+        }
+
+        .produto-unico img {
+
+            max-width: 100%;
+
+        }
+
+        .produto-unico p {
+
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        .produto-unico a {
+            text-decoration: none;
+            color: white;
+            background-color: #5fb382;
+            text-align: center;
+            display: block;
+            padding: 5px 0;
+            font-size: 18px;
+
+        }
+
+        h2 {
+
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            
+            
+        }
+        form input[type = button]{
+            background-color: #5f7c8a;
+            padding: 10px 0;
+            color:white;
+            text-align: center;
+            border:0;
+            cursor: pointer;
+            
+        }
+
+        .check-no-carrinho {
+
+            border-bottom: 2px solid;
+            padding: 17px 0;
+        }
+        
+
+    </style>
+</head>
+
+<body> 
+<b><h2>Carrinho</h2></b>
+<div id="carrinho" :></div>
+<!--atualiza carrinho-->
+ 
+ </body>
+ 
+ </html>
