@@ -68,7 +68,7 @@ adicionaCarrinho = () => {
 
             contemCarrinho.innerHTML += `
             <div class="check-no-carrinho">
-            <a href ="`+index.html+`"
+            <a href ="`+ index.html + `"
             <p>Produto: `+ valor.nome + ` </p>
             <p>Quantidade: `+ valor.quantidade + `</P>
             <div clear:both"></div>
@@ -92,4 +92,47 @@ for (var i = 0; i < links.length; i++) {
 
     })
 
+} validSenha = () => {
+    var tamanhoSenha = document.getElementById('senha')
+    var confirmSenha = document.getElementById('senha2')
+    if (tamanhoSenha.length < 8) {
+
+        return alert('Senha inválida')
+
+    } if (tamanhoSenha != confirmSenha) {
+
+        return alert('Senha inválida')
+
+    } else {
+
+        return alert('Conta criada')
+
+    }
+
 }
+
+checkBox = () => {
+    var check = document.getElementById('box');
+    if (check.checkend) {
+        return alert('Conta crianda')
+    } else {
+        return alert('Não aceitamos robôs!')
+    }
+
+}
+
+validEmail = () => {
+    var email = document.getElementById('email')
+    var exclude = /[^@-.w]|^[_@.-]|[._-]{2}|[@.]{2}|(@)[^@]*1/;
+    var check = /@[w-]+./;
+    var checkend = /.[a-zA-Z]{2,3}$/;
+
+    if (((email.search(exclude) != -1) || (email.search(check)) == -1) || (email.search(checkend) == -1)) {
+        return alert('E-mail inválido');
+    } else {
+        return alert('Conta criada')
+    }
+
+}
+
+
