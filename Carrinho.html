@@ -1,17 +1,17 @@
 <html lang="pt-br">
+<!--dels em ajuda a organizar esse carrinho-->
 
 <head>
-    <script src="products.js"></script>
     <title>Carrinho de compra</title>
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
-    <a href="index.html"><input type="button" name="volta" value="Página anterior"/></a>
+    <a href="index.html"><input type="button" name="volta" value="Página anterior" /></a>
 
     <style>
-        body{
+        body {
             background-color: #5f7c8a;
         }
-        
+
         * {
             font-family: 'Lato', sans-serif;
             margin: 0;
@@ -66,17 +66,22 @@
             padding: 10px 0;
             text-align: center;
             color: white;
-            
-            
+
+
         }
-        form input[type = button]{
-            background-color: #5f7c8a;
-            padding: 10px 0;
-            color:white;
+
+        input[type=button] {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 8px 15px;
             text-align: center;
-            border:0;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
             cursor: pointer;
-            
+
         }
 
         .check-no-carrinho {
@@ -84,16 +89,25 @@
             border-bottom: 2px solid;
             padding: 17px 0;
         }
-        
+        @media screen and (max-width: 768xp){
+    .produto-unico{
 
+        width: 100%;
+        margin-right: 0;
+    }
+
+}
     </style>
 </head>
 
-<body> 
-<b><h2>Carrinho</h2></b>
-<div id="carrinho" :></div>
-<!--atualiza carrinho-->
- 
- </body>
- 
- </html>
+<body>
+    <b>
+        <h2>Carrinho</h2>
+    </b>
+    <div id="carrinho" :></div>
+    <script src="products.js"></script>
+    <!--atualiza carrinho-->
+
+</body>
+
+</html>

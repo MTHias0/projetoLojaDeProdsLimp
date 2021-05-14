@@ -1,69 +1,102 @@
 <html lang="pt-br">
-    <head>
-        <title>Criar Conta</title>
-        <meta charset="utf-8" />
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
-        <a href="Login.html"><input type="submit" name="volta" value="Página anterior"/></a>
-    </head>
-    <style>
-        *{margin:0;padding:0;box-sizing: border-box;}
-        body{
-            background-color: #5f7c8a;
-        }
-        form{
 
-            background-color: white;
-            max-width: 500px;
-            width: 70%;
-            padding: 60px;;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform:translate(-50%,-50%);
-        }
-        form h3{
+<head>
+    <title>Criar Conta</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <a href="Login.html"><input type="button" name="volta" value="Página anterior" /></a>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-            text-align: center;
-            color:#5f7c8a;
-        }
-        form input[type=text],
-        form input[type=password]{
+    body {
+        background-color: #5f7c8a;
+    }
+
+    form {
+
+        background-color: white;
+        max-width: 500px;
+        width: 70%;
+        padding: 60px;
+        ;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    form h3 {
+
+        text-align: center;
+        color: #5f7c8a;
+    }
+
+    form input[type=text],
+    form input[type=password] {
+
+        width: 100%;
+        height: 45px;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        margin: 10px 0;
+    }
+
+    form input[type=submit] {
+
+        width: 100%;
+        height: 40px;
+        cursor: pointer;
+        background-color: #5f7c8a;
+        color: white;
+        border: 0;
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    p {
+
+        color: black;
+    }
+
+    input[type=button] {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 8px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 768xp) {
+        .produto-unico {
 
             width: 100%;
-            height: 45px;
-            border: 1px solid #ccc;
-            padding-left: 10px;
-            margin: 10px 0;
+            margin-right: 0;
         }
-        form input[type=submit]{
+    }
+</style>
 
-            width: 100%;
-            height: 40px;
-            cursor: pointer;
-            background-color: #5f7c8a;
-            color: white;
-            border:0;
-            border-radius: 20px;
-            transition: 1s;
-        }
-        p{
-
-            color: black;
-        }
-
-    </style>
-    <body>
-        <form>
-            <h3>Crie sua conta</h3>
-            <input id="email" type="text" name="email" placeholder="Seu e-mail..."/>
-            <input type="password" name="senha" placeholder="Senha (Mínimo 8 caracteres)..."/>
-            <input type="password" name="senha" placeholder="Sua senha novamente..."/>
-            <input id ="enviar" type="submit" name="acao" value="Enviar"/> <br>
-            <br>
-            <input type="checkbox" name="robo?" value="Não sou um robô!"/><br>
-            <br>
-            <p>Não sou um robô!</p>
-        </form>
-    </body>
+<body>
+    <form>
+        <h3>Crie sua conta</h3>
+        <input id="email" type="text" name="email" placeholder="Seu e-mail..." />
+        <input type="password" name="senha" placeholder="Senha (Mínimo 8 caracteres)..." />
+        <input type="password" name="senha" placeholder="Sua senha novamente..." />
+        <input id="enviar" type="submit" name="acao" value="Enviar" /> <br>
+        <br>
+        <input type="checkbox" name="robo?" value="Não sou um robô!" /><br>
+        <br>
+        <p>Não sou um robô!</p>
+    </form>
+</body>
 
 </html>

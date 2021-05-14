@@ -57,6 +57,7 @@ const itens = [
     },*/
 ]
 
+
 IniciaProdutos = () => {
 
     var contemItens = document.getElementById('produtos')
@@ -66,7 +67,7 @@ IniciaProdutos = () => {
             <div class = "produto-unico">
                 <img src="`+ valor.img + `" />
                 <p> `+ valor.nome + `</p>
-                <p> `+valor.preco+`</p>
+                <p> `+ valor.preco + `</p>
                 <a key ="`+ valor.cod + `" href="">Adicionar ao carrinho!</a>
                 
             </div>
@@ -83,8 +84,8 @@ IniciaProdutos();
 
 adicionaCarrinho = () => {
     event.preventDefault()
-    var contemCarrinho = document.getElementById('carrinho')
-    contemCarrinho.innerHTML = "carrinho";
+    var contemCarrinho = document.getElementById('produtos')
+    contemCarrinho.innerHTML = "";
     itens.map((valor) => {
         if (valor.quantidade > 0) {
 
@@ -109,7 +110,7 @@ for (var i = 0; i < links.length; i++) {
         let key = this.getAttribute('Key');
         itens[key].quantidade++;
         adicionaCarrinho();
-        
+
 
     })
 
