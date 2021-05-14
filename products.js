@@ -4,57 +4,33 @@ const itens = [
         nome: 'Detergente',
         img: 'image2.jpg',
         quantidade: 0,
-        preco: "R$2,50 L"
+        imagePreco: "R$2,50 L ",
+        preco: 2.50
     },
     {
         cod: 1,
         nome: 'Desinfetante',
         img: 'image2.jpg',
         quantidade: 0,
-        preco: "R$2,50 L "
+        imagePreco: "R$2,50 L ",
+        preco: 2.50
     },
     {
         cod: 2,
         nome: 'Cloro',
         img: 'image2.jpg',
         quantidade: 0,
-        preco: "R$2,50 L"
+        imagePreco: "R$2,50 L",
+        preco: 2.50
     },
     {
         cod: 3,
         nome: 'Água Sanitária',
         img: 'image2.jpg',
         quantidade: 0,
-        preco: "R$2,50 L"
+        imagePreco: "R$2,50 L ",
+        preco: 2.50
     },
-    /*{
-        cod: 4,
-        nome: 'Sabonete Líquido(Mãos)',
-        img: 'image2.jpg',
-        quantidade: 0,
-        preco: "R$7,00 L"
-    },
-    {
-        cod: 5,
-        nome: 'Amaciante',
-        img: 'image2.jpg',
-        quantidade: 0,
-        preco: "R$3,00 L"
-    },
-    {
-        cod: 6,
-        nome: 'Sabão Líquido(Roupa)',
-        img: 'image2.jpg',
-        quantidade: 0,
-        preco: "R$5,00 L"
-    },
-    {
-        cod: 7,
-        nome: 'Xampu para carro',
-        img: 'image2.jpg',
-        quantidade: 0,
-        preco: "R$5,00 L"
-    },*/
 ]
 
 
@@ -67,7 +43,7 @@ IniciaProdutos = () => {
             <div class = "produto-unico">
                 <img src="`+ valor.img + `" />
                 <p> `+ valor.nome + `</p>
-                <p> `+ valor.preco + `</p>
+                <p> `+ valor.imagePreco + `</p>
                 <a key ="`+ valor.cod + `" href="">Adicionar ao carrinho!</a>
                 
             </div>
@@ -82,18 +58,21 @@ IniciaProdutos = () => {
 IniciaProdutos();
 
 
+
 adicionaCarrinho = () => {
     event.preventDefault()
     var contemCarrinho = document.getElementById('produtos')
     contemCarrinho.innerHTML = "";
     itens.map((valor) => {
+
         if (valor.quantidade > 0) {
 
             contemCarrinho.innerHTML += `
             <div class="check-no-carrinho">
-            <p style ="float:left;">Produto: `+ valor.nome + ` </p>
-            <p style ="float:right;">Quantidade: `+ valor.quantidade + `</P>
-            <div style=clear:both"></div>
+            <a href ="`+index.html+`"
+            <p>Produto: `+ valor.nome + ` </p>
+            <p>Quantidade: `+ valor.quantidade + `</P>
+            <div clear:both"></div>
             </div>
         `;
         }
