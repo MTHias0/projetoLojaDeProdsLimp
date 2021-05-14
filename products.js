@@ -68,7 +68,6 @@ adicionaCarrinho = () => {
 
             contemCarrinho.innerHTML += `
             <div class="check-no-carrinho">
-            <a href ="`+ index.html + `"
             <p>Produto: `+ valor.nome + ` </p>
             <p>Quantidade: `+ valor.quantidade + `</P>
             <div clear:both"></div>
