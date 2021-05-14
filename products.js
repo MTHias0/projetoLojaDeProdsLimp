@@ -2,7 +2,7 @@ const itens = [
     {
         cod: 0,
         nome: 'Detergente',
-        img: 'image2.jpg',
+        img: '../Image/image2.jpg',
         quantidade: 0,
         imagePreco: "R$2,50 L ",
         preco: 2.50
@@ -10,7 +10,7 @@ const itens = [
     {
         cod: 1,
         nome: 'Desinfetante',
-        img: 'image2.jpg',
+        img: '../Image/image2.jpg',
         quantidade: 0,
         imagePreco: "R$2,50 L ",
         preco: 2.50
@@ -18,7 +18,7 @@ const itens = [
     {
         cod: 2,
         nome: 'Cloro',
-        img: 'image2.jpg',
+        img: '../Image/image2.jpg',
         quantidade: 0,
         imagePreco: "R$2,50 L",
         preco: 2.50
@@ -26,7 +26,7 @@ const itens = [
     {
         cod: 3,
         nome: 'Água Sanitária',
-        img: 'image2.jpg',
+        img: '../Image/image2.jpg',
         quantidade: 0,
         imagePreco: "R$2,50 L ",
         preco: 2.50
@@ -56,7 +56,6 @@ IniciaProdutos = () => {
 
 
 IniciaProdutos();
-
 
 
 adicionaCarrinho = () => {
